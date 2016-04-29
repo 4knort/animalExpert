@@ -12,13 +12,11 @@
 }
 
 .row(){
-  @media(max-width: 780px) {
-    .col:first-child {
-      padding: 0;
-    }
-    .col:last-child {
-      padding: 0;
-    }
+  .col:first-child{
+    padding-left: 0;
+  }
+  .col:last-child{
+    padding-right: 0;
   }
   &:after{
     content: "";
@@ -29,6 +27,7 @@
 
 .row--inline(){
   font-size: 0;
+  margin: 0 -15px;
   .col{
     float: none;
     display: inline-block;
@@ -41,22 +40,20 @@
 
 
 // desktop
-.lg(@size) {
+.lg(@size){
   width: 100% / (12 / @size);
 }
 
-
-// tablet
-.md(@size) {
-  @media(max-width: ???) {
+// mobile
+.sm(@size){
+  @media(max-width: 780px){
     width: 100% / (12 / @size);
   }
 }
 
-
-// mobile
-.sm(@size) {
-  @media(max-width: 780px) {
+// tablet
+.md(@size){
+  @media(max-width: 780px){
     width: 100% / (12 / @size);
   }
 }
