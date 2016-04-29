@@ -1,0 +1,76 @@
+.product-buy {
+  &__price {
+    font-size: 50px;
+    line-height: 40px;
+    color: @blue;
+    margin-bottom: 17px;
+    &-grey {
+      display: block;
+      font-size: 30px;
+      color: #000;
+      opacity: 0.5;
+      font-style: italic;
+    }
+  }
+  &__text {
+    font-size: 11px;
+    line-height: 14px;
+    opacity: 0.7;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+  &__btn {
+    border: none;
+    outline: none;
+    width: 100px;
+    box-sizing: border-box;
+    padding: 12px 0;
+    padding-bottom: 17px;
+    background-color: @green;
+    width: 316px;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 25px;
+  }
+  &__user-links {
+    font-size: 0;
+  }
+  &__link {
+    &:hover {
+      color: #fc6147;
+      text-decoration: underline;
+    }
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15;
+    position: relative;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    padding-left: 40px;
+    &--wish {
+      margin-right: 14px;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 23px;
+        height: 19px;
+        top: 1px;
+        left: 4px;
+        background: url("../img/sprites.png") no-repeat -401px -5px;
+      }
+    }
+    &--recommendation {
+      &:before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 1px;
+        left: 11px;
+        background: url("../img/sprites.png") no-repeat -130px -5px;
+      }
+    }
+  }
+}
