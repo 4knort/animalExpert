@@ -1,0 +1,41 @@
+.breadcrumbs{
+  padding: 10px 11px;
+  padding-left: 36px;
+  padding-bottom: 13px;
+  background: url("../img/breadcrumbs-bg.jpg") repeat-x;
+  background-position: center left; 
+  margin-bottom: 37px;
+  &__list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  &__item{
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 22px;
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute; 
+      width: 1px;
+      height: 15px;
+      background-color: #32373f;
+      top: 2px;
+      right: 10px;
+    }
+    &:last-child:after{
+      display: none;
+    }
+  }
+  &__link{
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration: underline;
+    color: #32373f;
+    &--active {
+      color: #9d6c5c; 
+      text-decoration: none; 
+    }
+  }
+}

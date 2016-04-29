@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-empty-star-icon {
+    width: 12px;
+    height: 10px;
+    background-position: -5px -5px;
+}
+
+.sprite-empty-star-icon-big {
+    width: 17px;
+    height: 14px;
+    background-position: -5px -25px;
+}
+
+.sprite-full-star-icon {
+    width: 12px;
+    height: 10px;
+    background-position: -5px -49px;
+}
+
+.sprite-full-star-icon-big {
+    width: 17px;
+    height: 14px;
+    background-position: -5px -69px;
+}
