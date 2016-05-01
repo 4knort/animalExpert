@@ -5,6 +5,7 @@
   &__count {
     width:190px;
     margin-right:50px;
+    position:relative;
   }
   &__amount {
     display:inline-block;
@@ -19,7 +20,60 @@
   }
   &__counter {
     height:35px;
-    width:100px;
+    width:69px;
+    box-sizing:border-box;
+    padding:19px 15px;
+    font-family:"Open Sans", Arial, sans-serif;
+    color:@blue;
+    font-size:16px;
+    line-height:18px;
+    border:1px solid #dfdfdf;
+    border-right:none;
+  }
+  &__count-btn {
+    width:33px;
+    height:20px;
+    background-color:@green;
+    border:none;
+    outline:none;
+    position:absolute;
+    right:6px;
+    &:hover {
+      background-color:darken(@green, 5%);
+    }
+    &:active {
+      background-color:darken(@green, 10%);
+    }
+    &--plus {
+      border-top-right-radius:3px;
+      top:0;
+      &:after {
+        content:"";
+        position:absolute;
+        border-right:3px solid transparent;
+        border-bottom:3px solid #fff;
+        border-left:3px solid transparent;
+        top:15px;
+        left:13px;
+        height:0;
+        width:0;
+      }
+    }
+    &--minus {
+      border-bottom-right-radius:3px;
+      bottom:0;
+      &:after {
+        content:"";
+        position:absolute;
+        border-right:3px solid transparent;
+        border-top:3px solid #fff;
+        border-left:3px solid transparent;
+        top:4px;
+        left:13px;
+        height:0;
+        width:0;
+      }
+    }
   }
   &__pcs {
     font-size:16px;

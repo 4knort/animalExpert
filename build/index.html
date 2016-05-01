@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <title>PET'S EXPERT</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700,700italic,800,600italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.min.css"></head>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
 <body>
   <div class="container">
     <header class="main-header">
@@ -79,7 +80,6 @@
               </div>
             </div>
           </div>
-          <select class="user-menu__language to-left" name="" id=""></select>
         </div>
       </div>
       <div class="main-header__bottom clearfix">
@@ -184,7 +184,10 @@
             <div class="product-form__quantity clearfix">
               <div class="product-form__count to-left">
                 <div class="product-form__amount">Menge</div>
-                <input type="number" class="product-form__counter"></div>
+                <input type="input" class="product-form__counter" value="1">
+                <button class="product-form__count-btn product-form__count-btn--plus"></button>
+                <button class="product-form__count-btn product-form__count-btn--minus"></button>
+              </div>
               <div class="product-form__weight to-left">
                 <input checked name="radio-weight" id="radio85" type="radio" class="product-form__weight-btn product-form__weight-btn--active">
                 <label for="radio85" class="product-form__weight-label" >85 gr</label>
@@ -258,7 +261,7 @@
           </table>
         </div>
         <div class="product-info__description to-right">
-          <p class="product-info__about">Beschreibung</p>
+          <p class="product-info__about product-info__about--description">Beschreibung</p>
           <h2 class="product-info__title product-info__title--big">Large Athletic Puppy mit OPTISTART reich an Huhn</h2>
           <p class="product-info__text">
             Pro Plan Large Puppy Athletic mit OPTI START® wurde speziell für den besonderen Nährstoffbedarf von Welpen im Alter zwischen 1,5 und 24 Monaten entwickelt.
@@ -466,6 +469,6 @@
       </div>
     </footer>
   </div>
-
+  <script src="js/script.min.js"></script>
 </body>
 </html>
