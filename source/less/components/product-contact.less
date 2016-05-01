@@ -1,85 +1,100 @@
 .product-contact {
-  width: 213px;
+  width:213px;
   &__support {
-    margin-top: 11px;
-    padding-top: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.1); 
-    box-sizing: border-box;
-    width: 244px;
-    border-right: none;
-    
+    margin-top:11px;
+    padding-top:15px;
+    border:1px solid rgba(0, 0, 0, 0.1);
+    box-sizing:border-box;
+    width:213px;
+    border-right:none;
+    position:relative;
+    &:after {
+      content:"Unsere Vorteile";
+      position:absolute;
+      top:42px;
+      right:-75px;
+      background-color:@blue;
+      padding:6px;
+      width:106px;
+      color:#fff;
+      text-align:center;
+      font-size:12px;
+      border-top-left-radius:5px;
+      border-top-right-radius:5px;
+      transform:rotate(90deg);
+    }
   }
   &__text {
-    font-size: 13px;
-    line-height: 20px;
-    color: @dark-blue-txt; 
-    padding-left: 58px;
-    margin: 0;
-    position: relative;
+    font-size:13px;
+    line-height:20px;
+    color:@dark-blue-txt;
+    padding-left:58px;
+    margin:0;
+    position:relative;
     &:before {
-      content: "";
-      position: absolute;
-      top: 6px;
-      left: 18px;
-      background: url("../img/sprites.png") no-repeat;
+      content:"";
+      position:absolute;
+      top:6px;
+      left:18px;
+      background:url("../img/sprites.png") no-repeat;
     }
     &--small {
-      display: block; 
-      font-size: 11px;
-      line-height: 14px;
+      display:block;
+      font-size:11px;
+      line-height:14px;
     }
     &--delievery {
-      margin-bottom: 9px;
+      margin-bottom:9px;
       &:before {
-        top: 4px;
-        width: 24px;
-        height: 24px;
-        background-position: -160px -5px;;      
+        top:4px;
+        width:24px;
+        height:24px;
+        background-position: -202px -5px;
       }
     }
     &--support {
-      margin-bottom: 24px;
+      margin-bottom:24px;
       &:before {
-        width: 24px;
-        height: 22px;
-        background-position: -852px -5px;;
+        width:24px;
+        height:22px;
+        background-position:-956px -5px;
       }
     }
   }
   &__social {
-    padding-top: 5px;
-    font-size: 0;
-    padding-left: 20px;
+    padding-top:5px;
+    font-size:0;
+    padding-left:20px;
     &-text {
-      font-size: 12px;
-      line-height: 18px;
-      color: #aaaaaa;
-      padding-left: 13px; 
+      font-size:12px;
+      line-height:18px;
+      color:#aaa;
+      padding-left:13px;
     }
     &-link {
-      display: inline-block;
-      vertical-align: top;
-      width: 27px;
-      height: 26px;
-      background: url("../img/sprites.png") no-repeat;
-      margin-right: 10px;
+      display:inline-block;
+      vertical-align:top;
+      width:27px;
+      height:26px;
+      background:url("../img/sprites.png") no-repeat;
+      margin-right:10px;
       &:last-child {
-        margin-right: 0;
+        margin-right:0;
       }
       &--fb {
-        background-position: -498px -5px;
+        background-position:-600px -5px;
       }
       &--google {
-        background-position: -535px -5px;
+        background-position:-637px -5px;
       }
       &--twit {
-        background-position: -572px -5px;
+        background-position:-674px -5px;
       }
       &--tumb {
-        background-position: -609px -5px;
+        background-position:-711px -5px;
       }
       &--pin {
-        background-position: -647px -5px;
+        background-position:-748px -5px;
       }
     }
   }

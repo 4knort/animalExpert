@@ -1,0 +1,89 @@
+.modal-login {
+  width: 431px;
+  min-height: 456px;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 100;
+  top: 44px;
+  left: -245px;
+  display: none;
+  &__form {
+    background-color: #3cb2e2;
+    padding: 0 25px ;  
+    padding-top: 21px;
+    padding-bottom: 27px;
+  }
+  &__label {
+    display: block;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 200;
+    margin-bottom: 10px;
+  }
+  &__input {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 11px 15px;
+    box-sizing: border-box;
+  } 
+  &__submit {
+    margin-top: 8px;
+    border: none;
+    outline: none;
+    background-color: #FFCB03;
+    padding: 9px 38px;
+    border-radius: 5px;
+    margin-right: 15px;
+    color: @dark-blue-txt;
+    font-size: 18px;
+  }
+  &__forget {
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  &__social {
+    padding: 0 25px;
+    padding-top: 20px; 
+    padding-bottom: 21px;
+    background-color: #FFF;
+    &-title {
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 14px;
+      margin: 0;
+      color: @blue;
+      font-weight: normal;
+      margin-bottom: 15px;
+    }
+  }
+  &__register {
+    background-color: @blue;
+    padding: 0 25px;
+    padding-top: 22px;
+    padding-bottom: 14px; 
+    &-text {
+      color: #fff;
+      font-size: 12px;
+      line-height: 16px;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+    &-btn {
+      text-transform: uppercase;
+      background-color: @green;
+      padding: 4px 11px;
+      border-radius: 5px;
+      display: inline-block;
+      vertical-align: top;
+      color: #fff;
+    }
+  }
+}

@@ -1,104 +1,123 @@
 .product {
-  padding-left: 32px;
-  border-bottom: 13px solid #f9f9fa;
-  padding-bottom: 40px;
+  padding-left:32px;
+  border-bottom:13px solid #f9f9fa;
+  padding-bottom:40px;
   &__image {
-    padding-top: 40px;
-    padding-bottom: 44px;
-    border: 1px solid @grey;
-    width: 542px;
+    padding-top:40px;
+    padding-bottom:44px;
+    border:1px solid @grey;
+    width:542px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      top: -17px;
+      right: -39px;
+      width: 144px;
+      height: 161px;
+      background: url("../img/hot-label.png") no-repeat;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 56px;
+      left: -76px;
+      width: 158px;
+      height: 191px;
+      background: url("../img/proudct-description.png") no-repeat;
+    }
     img {
-      display: block;
-      margin: 0 auto;
+      display:block;
+      margin:0 auto;
     }
   }
   &__menu {
-    max-width: 654px;
+    max-width:654px;
     &-reviews {
-      margin-bottom: 25px;
-      background-color: #f9f9fa;
-      padding-top: 12px;
-      padding-bottom: 17px;
-      max-width: 620px;
-      border-radius: 5px;
-      position: relative;
+      margin-bottom:25px;
+      background-color:#f9f9fa;
+      padding-top:12px;
+      padding-bottom:17px;
+      max-width:620px;
+      border-radius:5px;
+      position:relative;
       &:before {
-        content: "";
-        position: absolute;
-        border: 7px solid transparent;
-        border-right-color: #f9f9fa;
-        top: 53px;
-        left: 2px;
-        transform: rotate(45deg);
+        content:"";
+        position:absolute;
+        border:7px solid transparent;
+        border-right-color:#f9f9fa;
+        top:53px;
+        left:2px;
+        transform:rotate(45deg);
       }
     }
     &-review {
-      padding-left: 5px;
-      box-sizing: border-box;
-      margin: 0;
-      width: 405px;
-      font-size: 11px;
-      line-height: 15px;
-      font-style: italic;
+      padding-left:5px;
+      box-sizing:border-box;
+      margin:0;
+      width:405px;
+      font-size:11px;
+      line-height:15px;
+      font-style:italic;
       &--grey {
-        opacity: 0.7;
-        font-weight: normal;
-        display: block;
+        opacity:0.7;
+        font-weight:normal;
+        display:block;
       }
     }
     &-allreviews {
-      display: block;
-      width: 40px;
-      font-size: 11px;
-      line-height: 12px;
-      color: #f58201;
-      text-decoration: underline;
-      margin-top: 7px;
-      margin-right: 23px;
+      display:block;
+      width:40px;
+      font-size:11px;
+      line-height:12px;
+      color:#f58201;
+      text-decoration:underline;
+      margin-top:7px;
+      margin-right:23px;
     }
     &-title {
-      margin: 0;
-      font-size: 30px;
-      line-height: 36px;
-      color: @dark-blue-txt;
-      font-weight: 800;
-      text-transform: uppercase;
-      margin-bottom: 12px;
+      margin:0;
+      font-size:30px;
+      line-height:36px;
+      color:@dark-blue-txt;
+      font-weight:800;
+      text-transform:uppercase;
+      margin-bottom:12px;
     }
     &-rating {
-      padding-left: 4px;
-      margin-bottom: 13px;
+      padding-left:4px;
+      margin-bottom:13px;
     }
     &-text {
-      width: 100px;
-      margin: 0;
-      margin-right: 137px;
-      font-size: 16px;
-      line-height: 18px;
-      color: @blue;
+      width:100px;
+      margin:0;
+      margin-right:137px;
+      font-size:16px;
+      line-height:18px;
+      color:@blue;
       &-link {
-        text-decoration: underline;
-        color: @green;
+        text-decoration:underline;
+        color:@green;
       }
     }
     &-status {
-      width: 138px;
-      font-size: 16px;
-      line-height: 18px;
-      color: @blue;
+      width:138px;
+      font-size:16px;
+      line-height:18px;
+      color:@blue;
       &--green {
-        margin-left: 8px;
-        font-size: 12px;
-        line-height: 18px;
-        width: 80px;
-        box-sizing: border-box;
-        margin-left: 0;
-        color: #fff;
-        display: inline-block;
-        vertical-align: top;
-        border-radius: 25px;
-        padding: 1px 13px;
-        background-color: @green;
+        margin-left:8px;
+        font-size:12px;
+        line-height:18px;
+        width:80px;
+        box-sizing:border-box;
+        margin-left:0;
+        color:#fff;
+        display:inline-block;
+        vertical-align:top;
+        border-radius:25px;
+        padding:1px 13px;
+        background-color:@green;
       }
     }
   }

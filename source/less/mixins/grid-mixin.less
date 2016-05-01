@@ -1,59 +1,59 @@
 .col() {
-  float: left;
-  padding: 0 15px;
-  box-sizing: border-box;
+  float:left;
+  padding:0 15px;
+  box-sizing:border-box;
 }
 
 .to-right() {
-  float: right;
+  float:right;
 }
 .to-left() {
-  float: left;
+  float:left;
 }
 
 .row() {
   .col:first-child {
-    padding-left: 0;
+    padding-left:0;
   }
   .col:last-child {
-    padding-right: 0;
+    padding-right:0;
   }
   &:after {
-    content: "";
-    display: block;
-    clear: both;
+    content:"";
+    display:block;
+    clear:both;
   }
 }
 
 .row--inline() {
-  font-size: 0;
-  margin: 0 -15px;
+  font-size:0;
+  margin:0 -15px;
   .col {
-    float: none;
-    display: inline-block;
-    vertical-align: top;
+    float:none;
+    display:inline-block;
+    vertical-align:top;
   }
   &:after {
-    display: none;
+    display:none;
   }
 }
 
 
 // desktop
 .lg(@size) {
-  width: 100% / (12 / @size);
+  width:100% / (12 / @size);
 }
 
 // mobile
 .sm(@size) {
   @media(max-width: 780px) {
-    width: 100% / (12 / @size);
+    width:100% / (12 / @size);
   }
 }
 
 // tablet
 .md(@size) {
   @media(max-width: 780px) {
-    width: 100% / (12 / @size);
+    width:100% / (12 / @size);
   }
 }

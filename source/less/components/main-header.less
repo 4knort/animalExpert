@@ -1,52 +1,58 @@
 .main-header {
-  margin-bottom: 17px;
+  margin-bottom:17px;
   &__top {
-    margin-bottom: 12px;
+    margin-bottom:12px;
   }
   &__search-top {
-    margin-bottom: 8px;
+    margin-bottom:8px;
   }
   &__search {
-    width: 590px;
-    margin-right: 10px;
+    width:590px;
+    margin-right:10px;
     &-text {
-      padding-top: 3px;
-      margin: 0;
-      font-size: 11px;
-      line-height: 14px;
-      font-style: italic;
-      font-weight: 600;
+      padding-top:3px;
+      margin:0;
+      font-size:11px;
+      line-height:14px;
+      font-style:italic;
+      font-weight:600;
       &-grey {
-        opacity: 0.7;
+        opacity:0.7;
       }
     }
     &-form {
-      font-size: 0;
+      font-size:0;
     }
     &-input {
-      border: 1px solid @grey;
-      outline: none;
-      font-family: "Open Sans", Arial, sans-serif;
-      font-size: 12px;
-      line-height: 14px;
-      color: #000;
-      padding: 11px 15px;
-      width: 410px;
-      padding-bottom: 12px;
+      border:1px solid @grey;
+      outline:none;
+      font-family:"Open Sans", Arial, sans-serif;
+      font-size:12px;
+      line-height:14px;
+      color:#000;
+      padding:11px 15px;
+      width:410px;
+      padding-bottom:12px;
     }
     &-btn {
-      vertical-align: top;
-      border: none;
-      outline: none;
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 13px;
-      line-height: 14px;
-      background-color: #32373f;
-      padding: 11px 47px;
-      padding-bottom: 14px;
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
+      vertical-align:top;
+      border:none;
+      outline:none;
+      color:#fff;
+      text-transform:uppercase;
+      font-size:13px;
+      line-height:14px;
+      background-color:@dark-blue-txt;
+      padding:11px 47px;
+      padding-bottom:14px;
+      border-top-right-radius:3px;
+      border-bottom-right-radius:3px;
+      &:hover {
+        background-color: darken(@dark-blue-txt, 10%);
+      }
+      &:active {
+        background-color: darken(@dark-blue-txt, 15%);
+      }
     }
   }
 }
